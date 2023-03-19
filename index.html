@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>&#60;TheCave&#47;&#62; Portfolio</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <nav class="navbar navbar-expand-lg navbar-light>
+            <a href="#s3">About&#47;&#62</a>
+      </nav>
+    </header>
+    <div class="wrapper content">
+      <div id="s1" class="s1">
+        <section>
+          <h1>WELCOME TO THE &#60;CAVE&#47;&#62;</h1>
+          <p>
+            Countinously seeking knowledge to become the best version of myself
+          </p>
+        </section>
+      </div>
+      <div id="s2" class="s2">
+        <section>
+          <h2>
+            <span
+              style="
+                font-family: Consolas, monaco, monospace;
+                font-size: 25px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 700;
+                line-height: 26.4px;
+              "
+              class="auto-type"
+            ></span>
+          </h2>
+          <h3>My Name is <kbd>Hafizul</kbd></h3>
+        </section>
+      </div>
+      <div id="s3" class="s3">
+        <section>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              vel faucibus mi. Nam at tellus in nunc malesuada bibendum. Mauris
+              vel quam sit amet lectus convallis lacinia ac eget diam. Aenean
+              sagittis, erat nec facilisis hendrerit, tellus elit bibendum nibh,
+              consequat laoreet dui urna quis justo.
+            </p>
+          </article>
+        </section>
+      </div>
+      <div class="s4">
+        <section></section>
+      </div>
+      <div class="s5">
+        <section></section>
+      </div>
+      <div class="s6">
+        <section></section>
+      </div>
+    </div>
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Todo grab cdn for typing effect -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- todo create type function -->
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["&#60;Assalamualaikum&#47;&#62;"],
+        typeSpeed: 80,
+        backSpeed: 100,
+        loop: true,
+      });
+    </script>
+    <!--Todo cursor movement-->
+    <script>
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+     <!-- todo ticktacktoe -->
+     <script src="app.js"></script>
+  </body>
+</html>
