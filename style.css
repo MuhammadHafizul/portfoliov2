@@ -1,13 +1,19 @@
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 html {
   scroll-behavior: smooth;
 }
 
 .header{
+  padding: 10px 10px 10px 10px;
   background-color: #111315;
   color: white;
+  font-size: 20px;
+  font-family: Consolas, monaco, monospace;
 }
 
 .s1 {
@@ -17,7 +23,8 @@ html {
   color: white;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  height: 700px;
+  height: 100vh;
+  position: relative;
 }
 
 .s2 {
@@ -29,7 +36,8 @@ html {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  height: 700px;
+  height: 100vh;
+  position: relative;
 }
 
 .s3 {
@@ -42,7 +50,8 @@ html {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
-  height: 700px;
+  height: 100vh;
+  position: relative;
 }
 
 .s5 {
@@ -89,4 +98,100 @@ kbd {
   padding: 2px;
   border: 2px solid #2b282859;
   color: orange;
+}
+
+a#scroll-btn {
+  position: absolute;
+  height: 10em;
+  width: 6.25em;
+  border: 0.5em solid white;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 20.25em;
+  border-radius: 3em;
+}
+a#scroll-btn:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.2em;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: white;
+  border-radius: 50%;
+  animation: move-down 2s infinite;
+}
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(5.3em);
+    opacity: 0;
+  }
+}
+#scroll-btn:after {
+  position: absolute;
+  content: "SCROLL DOWN";
+  width: 12em;
+  display: block;
+  width: 12em;
+  text-align: center;
+  left: -4.2em;
+  bottom: -2.5em;
+  font-size: 1.6em;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+a#scroll-btn2 {
+  position: absolute;
+  height: 10em;
+  width: 6.25em;
+  border: 0.5em solid black;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 20.25em;
+  border-radius: 3em;
+}
+a#scroll-btn2:before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 1.2em;
+  height: 1.2em;
+  width: 1.2em;
+  background-color: black;
+  border-radius: 50%;
+  animation: move-down 2s infinite;
+}
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(5.3em);
+    opacity: 0;
+  }
+}
+#scroll-btn2:after {
+  position: absolute;
+  content: "SCROLL DOWN";
+  width: 12em;
+  display: block;
+  width: 12em;
+  text-align: center;
+  left: -4.2em;
+  bottom: -2.5em;
+  font-size: 1.6em;
+  color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: 600;
 }
