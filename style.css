@@ -163,9 +163,22 @@ kbd {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
 }
+
+.carousel {
+  display: flex;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  animation: carousel 10s linear infinite;
+}
+
+
 
 .s4 {
   padding: 30px 30px 30px 30px;
