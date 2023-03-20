@@ -2,23 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 html {
   scroll-behavior: smooth;
 }
 
-.header{
-  padding: 10px 10px 10px 10px;
-  background-color: #111315;
-  color: white;
+.header {
+  padding: 10px;
+  color: royalblue;
+  background-color: #181a1b;
   font-size: 20px;
-
   font-family: Consolas, monaco, monospace;
 }
 
 .s1 {
-  padding: 300px 30px 30px 30px;
+  padding: 20px;
+  text-align: center;
   background-color: #111315;
   background-size: auto;
   color: white;
@@ -26,13 +25,13 @@ html {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
 }
 
 .s1 h1 {
   text-align: center;
-  transform: scale(0.94);
+  font-size: 28px;
+  margin-bottom: 20px;
+  transform: scale(0.94); /*to be review*/
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 @keyframes scale {
@@ -43,8 +42,8 @@ html {
 
 span {
   display: inline-block;
-  opacity: 0;
-  filter: blur(4px);
+  opacity: 1;
+  filter: blur(0px);
 }
 
 span:nth-child(1) {
@@ -70,71 +69,71 @@ span:nth-child(4) {
   }
 }
 
-.s1 p { 
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+.s1 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
   }
-  @keyframes scale {
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  span {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
-  }
-  
-  span:nth-child(1) {
-    animation: fade-in 0.8s 1.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(2) {
-    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(3) {
-    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  
-  span:nth-child(4) {
-    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+}
 
-  span:nth-child(5) {
-    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
 
-  span:nth-child(6) {
-    animation: fade-in 0.8s 2.0s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+span:nth-child(1) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 
-  span:nth-child(7) {
-    animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+span:nth-child(2) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 
-  span:nth-child(8) {
-    animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  span:nth-child(9) {
-    animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
-  span:nth-child(10) {
-    animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  }
+span:nth-child(3) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 
-  
-  @keyframes fade-in {
-    100% {
-      opacity: 1;
-      filter: blur(0);
-    }
-  }
+span:nth-child(4) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
 
+span:nth-child(5) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 2.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(9) {
+  animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(10) {
+  animation: fade-in 0.8s 2.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 
 .s2 {
-  padding: 30px 30px 30px 30px;
+  padding: 20px;
   text-align: center;
   font-family: Consolas, monaco, monospace;
   font-size: 15px;
@@ -147,6 +146,7 @@ span:nth-child(4) {
 }
 
 kbd {
+  font-size: 12px;
   border-radius: 2px;
   padding: 2px;
   border: 2px solid #2b282859;
@@ -154,18 +154,17 @@ kbd {
 }
 
 .s3 {
+  padding: 20px;
   text-align: center;
   background-color: #111315;
+  background-size: auto;
   color: white;
-  padding: 30px 30px 30px 30px;
-  font-family: Consolas, monaco, monospace;
-  font-size: 20px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 26.4px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .s4 {
@@ -209,26 +208,17 @@ kbd {
   transform: translate(-50%, -50%);
   transition: 0.15s;
 }
-/* .content:hover ~ .cursor {
-  transform: translate(-50%, -50%) scale(1.5);
-  background-color: #c6c6c6;
-  opacity: 0.5;
-}
-
-.content:hover ~ .cursor2 {
-  opacity: 0;
-} */
 
 /* scroll s1 */
 a#scroll-btn {
   position: absolute;
-  height: 10em;
-  width: 6.25em;
-  border: 0.5em solid white;
+  height: 6em;
+  width: 3.25em;
+  border: 0.3em solid white;
   margin: auto;
   left: 0;
   right: 0;
-  bottom: 10.25em; /* This is for the button position   */
+  bottom: 5.5em; /* This is for the button position   */
   border-radius: 3em;
 }
 a#scroll-btn:before {
@@ -237,133 +227,21 @@ a#scroll-btn:before {
   margin: auto;
   left: 0;
   right: 0;
-  top: 1.2em;
-  height: 1.2em;
-  width: 1.2em;
+  top: 0.2em;
+  height: 0.5em;
+  width: 0.5em;
   background-color: white;
   border-radius: 50%;
-  animation: move-down 2s infinite;
+  animation: move-down 5s infinite;
 }
 @keyframes move-down {
   80% {
     opacity: 0.5;
   }
   100% {
-    transform: translateY(5.3em);
+    transform: translateY(2em);
     opacity: 0;
   }
-}
-#scroll-btn:after {
-  position: absolute;
-  content: "SCROLL DOWN";
-  width: 12em;
-  display: block;
-  width: 12em;
-  text-align: center;
-  left: -4.2em;
-  bottom: -2.5em;
-  font-size: 1.6em;
-  color: #ffffff;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-
-/* scroll s2 */
-a#scroll-btn2 {
-  position: absolute;
-  height: 10em;
-  width: 6.25em;
-  border: 0.5em solid black;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 10.25em; /* This is for the button position   */
-  border-radius: 3em;
-}
-a#scroll-btn2:before {
-  position: absolute;
-  content: "";
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 1.2em;
-  height: 1.2em;
-  width: 1.2em;
-  background-color: black;
-  border-radius: 50%;
-  animation: move-down 2s infinite;
-}
-@keyframes move-down {
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(5.3em);
-    opacity: 0;
-  }
-}
-#scroll-btn2:after {
-  position: absolute;
-  content: "SCROLL DOWN";
-  width: 12em;
-  display: block;
-  width: 12em;
-  text-align: center;
-  left: -4.2em;
-  bottom: -2.5em;
-  font-size: 1.6em;
-  color: #000000;
-  letter-spacing: 3px;
-  font-weight: 600;
-}
-
-/* scroll s3 */
-a#scroll-btn3 {
-  position: absolute;
-  height: 8.5em;
-  width: 5.5em;
-  border: 0.5em solid white;
-  margin: auto;
-  left: 0;
-  right: 0;
-   bottom: 5.5em; /* This is for the button position   */
-  border-radius: 3em;
-}
-a#scroll-btn3:before {
-  position: absolute;
-  content: "";
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 1.2em;
-  height: 1.2em;
-  width: 1.2em;
-  background-color: white;
-  border-radius: 50%;
-  animation: move-down 2s infinite;
-}
-@keyframes move-down {
-  80% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(4.3em);
-    opacity: 0;
-  }
-}
-#scroll-btn3:after {
-  position: absolute;
-  content: "SCROLL DOWN";
-  width: 12em;
-  display: block;
-  width: 12em;
-  text-align: center;
-  left: -4.2em;
-  bottom: -2.5em;
-  font-size: 1.6em;
-  color: #ffffff;
-  letter-spacing: 3px;
-  font-weight: 600;
 }
 
 /* contact me form */
@@ -371,12 +249,16 @@ button {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, input, select, textarea {
-  color: #5A5A5A;
+button,
+input,
+select,
+textarea {
+  color: #5a5a5a;
   font: inherit;
   margin: 0;
 }
@@ -391,80 +273,86 @@ textarea {
 
 #borBox {
   border: solid 3px #474544;
-  max-width: 768px;
-  margin: 60px auto;
+  max-width: 1050px;
+  margin: 50px auto;
   position: relative;
 }
 
 form {
-  padding: 37.5px;
-  margin: 50px 0;
+  padding: 20px;
+  margin: 20px 0;
 }
 
 .underline {
   border-bottom: solid 2px #474544;
-  margin: -0.512em auto;
-  width: 80px;
+  margin: -0.3em auto;
+  width: 0px;
 }
 
 .icon_wrapper {
-  margin: 50px auto 0;
+  margin: 30px auto 0;
   width: 100%;
 }
 
 .icon {
   display: block;
   fill: #474544;
-  height: 50px;
+  height: 25px;
   margin: 0 auto;
-  width: 50px;
+  width: 40px;
 }
 
 .email {
-	float: right;
-	width: 45%;
+  float: right;
+  width: 45%;
 }
 
-input[type='text'], [type='email'], select, textarea {
-	background: none;
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
   border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
-	font-size: 1.000em;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
   font-weight: 400;
   letter-spacing: 1px;
-	margin: 0em 0 1.875em 0;
-	padding: 0 0 0.875em 0;
+  margin: 0em 0 0.75em 0;
+  padding: 0 0 0.75em 0;
   text-transform: uppercase;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-input[type='text']:focus, [type='email']:focus, textarea:focus {
-	outline: none;
-	padding: 0 0 0.875em 0;
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.75em 0;
 }
 
 .message {
-	float: none;
+  float: none;
 }
 
 .name {
-	float: left;
-	width: 45%;
+  float: left;
+  width: 45%;
 }
 
 select {
-  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -483,28 +371,28 @@ select::-ms-expand {
 }
 
 textarea {
-	line-height: 150%;
-	height: 150px;
-	resize: none;
+  line-height: 100%;
+  height: 50px;
+  resize: none;
   width: 100%;
 }
 
 ::-webkit-input-placeholder {
-	color: #474544;
+  color: #474544;
 }
 
-:-moz-placeholder { 
-	color: #474544;
-	opacity: 1;
+:-moz-placeholder {
+  color: #474544;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #474544;
-	opacity: 1;
+  color: #474544;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #474544;
+  color: #474544;
 }
 
 #form_button {
@@ -513,22 +401,54 @@ textarea {
   color: #474544;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Helvetica', Arial, sans-serif;
+  font-family: "Helvetica", Arial, sans-serif;
   font-size: 0.875em;
   font-weight: bold;
   outline: none;
-  padding: 20px 35px;
+  padding: 15px 15px;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-ms-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #form_button:hover {
   background: #474544;
-  color: #F2F3EB;
+  color: #f2f3eb;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+  .s1 {
+    padding: 50px;
+  }
+
+  .s1 h1 {
+    font-size: 48px;
+  }
+
+  .s1 p {
+    font-size: 24px;
+  }
+
+  .s2 {
+    padding: 50px;
+    font-size: 18px;
+    line-height: 32px;
+    min-height: 1000px;
+  }
+
+  kbd {
+    font-size: 16px;
+  }
+
+  .s3 {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -538,27 +458,30 @@ textarea {
   }
 }
 
-@media screen and (max-width: 480px) {  
+@media screen and (max-width: 480px) {
   .underline {
     width: 68px;
   }
-  
+
   #form_button {
-    padding: 15px 25px;
+    padding: 20px 20px;
   }
 }
 
 @media screen and (max-width: 420px) {
   .icon {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
   }
-  
+
   .underline {
     width: 53px;
   }
-  
-  input[type='text'], [type='email'], select, textarea {
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
     font-size: 0.875em;
   }
 }
