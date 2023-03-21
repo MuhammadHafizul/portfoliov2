@@ -176,24 +176,17 @@ kbd {
 }
 
 /* s3 animation */
-.circle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  height: 200px;
-}
-
 .circle-container img {
   display: inline-block;
-  margin: 10px;
-  width: 80px;
-  height: 80px;
+  margin: 2%; /* use percentage for margin */
+  width: 15%; /* use percentage for width */
+  max-width: 80px; /* add max-width to avoid oversized images */
+  height: auto; /* remove height property */
   border-radius: 50%;
   background-color: whitesmoke;
-  padding: 20px;
+  padding: 2%; /* use percentage for padding */
   animation: spin 2s linear infinite, glow 2s linear infinite alternate;
-  box-shadow: 0 0 10px 2px #fff;
+  box-shadow: 0 0 8% 1% #fff; /* use percentage for box-shadow */
 }
 
 @keyframes spin {
@@ -204,10 +197,10 @@ kbd {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 10px 2px #fff;
+    box-shadow: 0 0 10px #fff;
   }
   100% {
-    box-shadow: 0 0 20px 5px #fff;
+    box-shadow: 0 0 20px #fff;
   }
 }
 /* end of s3 animation */
@@ -488,5 +481,18 @@ textarea {
 
   kbd {
     font-size: 16px;
+  }
+}
+/* add media query for smaller screens */
+@media (max-width: 768px) {
+  .circle-container {
+    flex-direction: column;
+    height: 80vh; /* adjust height */
+  }
+
+  .circle-container img {
+    margin: 5%; /* increase margin */
+    width: 30%; /* adjust width */
+    max-width: 100px; /* adjust max-width */
   }
 }
