@@ -13,13 +13,37 @@ html {
   background-color: #181a1b;
   font-size: 20px;
   font-family: Consolas, monaco, monospace;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1;
 }
 
+.header a {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Section 1 */
 .s1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   padding: 20px;
   text-align: center;
   background-color: #181a1b;
   background-size: auto;
+  background-position: center;
   color: white;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -28,7 +52,9 @@ html {
 }
 
 .s1 h1 {
+  color: #fff;
   text-align: center;
+  text-shadow: 2px 2px #000;
   font-size: 28px;
   margin-bottom: 20px;
   transform: scale(0.94); /*to be review*/
@@ -74,6 +100,7 @@ span:nth-child(4) {
   margin-bottom: 20px;
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  text-shadow: 2px 2px #000;
 }
 @keyframes scale {
   100% {
@@ -133,6 +160,9 @@ span:nth-child(10) {
 }
 
 .s2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 20px;
   text-align: center;
   font-family: Consolas, monaco, monospace;
@@ -144,6 +174,24 @@ span:nth-child(10) {
   height: 100vh;
   position: relative;
 }
+.s2 h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.s2 h3 {
+  font-size: 30px;
+  color: #333;
+}
+.s2 article {
+  font-size: 20px;
+  color: #333;
+  margin-top: 50px;
+  text-align: center;
+}
+
 
 kbd {
   font-size: 12px;
@@ -164,22 +212,28 @@ kbd {
   height: 100vh;
   position: relative;
   margin: 0;
-  display: grid;
+  display: flex;
   grid-template-rows: 500px 100px;
   grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
   align-items: center;
   justify-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.s3 p {
+  font-size: 40px;
+  margin-bottom: 50px;
 }
 
 /* s3 animation */
 .circle-container img {
   display: inline-block;
-  margin: 2%; /* use percentage for margin */
-  width: 15%; /* use percentage for width */
+  margin: 20px; /* use percentage for margin */
+  height: 100px;
+  width: 100px; /* use percentage for width */
   max-width: 80px; /* add max-width to avoid oversized images */
   height: auto; /* remove height property */
   border-radius: 50%;
@@ -206,6 +260,10 @@ kbd {
 /* end of s3 animation */
 
 .s4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 30px 30px 30px 30px;
   text-align: center;
   font-family: Consolas, monaco, monospace;
@@ -247,17 +305,21 @@ kbd {
   transition: 0.15s;
 }
 
-/* scroll*/
+/* scroll button*/
 a#scroll-btn {
+  display: block;
   position: absolute;
   height: 6em;
   width: 3.25em;
   border: 0.3em solid white;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 50px;
   left: 0;
   right: 0;
   bottom: 5.5em; /* This is for the button position   */
   border-radius: 3em;
+  white-space: nowrap;
+  overflow: hidden;
 }
 a#scroll-btn:before {
   position: absolute;
