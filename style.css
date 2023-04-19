@@ -595,7 +595,7 @@ textarea {
 /* Media query for screens smaller than 600px */
 @media (max-width: 600px) {
   #s2 {
-    padding: 20px;
+    padding: 30px 0px 0px 30px;
     font-size: 18px;
   }
 }
